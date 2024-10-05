@@ -53,10 +53,11 @@ export default function Home() {
 
   const handleCopy = () => {
     setCopying(true);
-    navigator.clipboard.writeText(shortUrl);
-    toast.success("Copied to clipboard");
+    navigator.clipboard.writeText(`https://url.dokopi.com/${shortUrl}`);
+
     setTimeout(() => {
       setCopying(false);
+      toast.success("Copied to clipboard");
     }, 500);
   };
 
