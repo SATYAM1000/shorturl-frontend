@@ -44,8 +44,8 @@ export default function Home() {
       );
       setShortUrl(response.data.data);
     } catch (error) {
-      console.error("Error shortening URL:", error.response.data);
-      toast.error(error.response.data.message || "Something went wrong");
+      console.error("Error shortening URL:", error);
+      toast.error(error?.response?.data?.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
