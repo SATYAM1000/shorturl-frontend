@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "MiniRoute",
-  description: "Generate short and long URLs with just a few clicks.",
+  description: "Generate short URLs with just a few clicks.",
 };
 
 export default function RootLayout({ children }) {
